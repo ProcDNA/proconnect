@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-jaelsf1%p)ryf^8w7-&o9e+4rqpiyn9*j_!3r1q#t@&+b!8+bh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*", "https://proconnect-zriz.onrender.com"]
 
@@ -82,12 +82,10 @@ WSGI_APPLICATION = 'stackprj.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+import dj_database_url
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse("postgresql://test_db_ytj0_user:KKHRwIXjfKcdipJiuNVGuMP378p3LcL5@dpg-crrbnapu0jms73ciibi0-a.oregon-postgres.render.com/test_db_ytj0"),
+    
 }
 
 
