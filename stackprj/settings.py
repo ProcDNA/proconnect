@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-jaelsf1%p)ryf^8w7-&o9e+4rqpiyn9*j_!3r1q#t@&+b!8+bh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://proconnect-zriz.onrender.com"]
 
 
 # Application definition
